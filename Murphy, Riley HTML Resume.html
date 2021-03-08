@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <title>Riley Murphy</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="./Resume.css"/>
+
+    <script src="https://kit.fontawesome.com/889e30fcd3.js" crossorigin="anonymous"></script>
+
+  <style>
+
+  html, body {
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Comfortaa', cursive;
+  }
+
+  .btn {
+    margin: 1rem 0;
+    padding: 1rem;
+    border: 0;
+    border-radius: 5px;
+    background-color: #8a2426;
+
+
+    cursor: pointer;
+  }
+  .btn:active {
+    outline: 0;
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    height: 100%;
+    width: 100%;
+
+    font-size: 1.1em;
+    color: lightgrey;
+    /* background-color: darkgrey; */
+    background-color: rgba(28, 27, 27, 1);
+  }
+  .main__header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+
+    width: 80%;
+  }
+  @media only screen and (max-width: 100rem) {
+    .main__header {
+      width: 100%
+    }
+  }
+  .main__header--name {
+    padding: 1rem;
+    font-size: 3rem;
+  }
+  .main__header--contact-info {
+    padding: 1rem;
+  }
+  .contact-info__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+
+    font-size: 1.25rem;
+  }
+  .contact-info__list--item {
+    align-self: flex-end;
+    padding: .5rem;
+  }
+
+  .main__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 70%;
+  }
+  @media only screen and (max-width: 100rem) {
+    .main__body {
+      width: 90%
+    }
+  }
+  .main__body--section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-bottom: 3rem;
+  }
+  .section__title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-bottom: 3px solid lightgrey;
+  }
+  .section__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+
+  .job-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .job {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .job__company-name {
+    font-weight: bold;
+    padding: 1rem;
+  }
+  .job__title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    padding: .5rem 2rem;
+  }
+  .job__title--name {
+    align-self: flex-start;
+  }
+  .job__title--date {
+    align-self: flex-end;
+    font-style: italic;
+  }
+  .job__responsibility-list {
+    padding: .5rem 4rem;
+  }
+  .responsibility {
+    padding: .5rem 0rem;
+  }
+
+  .project-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .project {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .project__link {
+    font-weight: bold;
+    padding: 1rem;
+  }
+  .project__description {
+    padding: .5rem 2rem;
+  }
+  .project__responsibility-list {
+    padding: .5rem 4rem;
+  }
+
+  .education-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .education {
+    display: flex;
+    flex-direction: column;
+  }
+  .education__line {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .education__line--organization {
+    padding: 1rem;
+
+    font-weight: bold;
+  }
+  .education__line--location {
+  }
+  .education__line--degree {
+    padding: 1rem;
+  }
+  .education__line--date {
+  }
+
+  .skills-title {
+    padding: 1rem;
+    font-weight: bold;
+  }
+  .skills-list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    padding: 0rem 1rem;
+  }
+  .skill {
+    padding: .5rem;
+  }
+
+
+  .main__footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    height: 5rem;
+  }
+  @media only screen and (max-width: 100rem) {
+    .main__footer {
+      width: 100%
+    }
+  }
+
+  a {
+    font-weight: bold;
+    padding: 1rem;
+    color: white;
+
+  }
+
+
+  </style>
+  </head>
+
+  <body>
+
+    <div class="main">
+
+      <div class="main__header">
+
+        <div class="main__header--name">
+          Riley Murphy
+        </div>
+
+        <div class="main__header--contact-info">
+          <div class="contact-info__list">
+            <div class="contact-info__list--item">
+              rileymurphy93@outlook.com
+              <i class="fas fa-envelope-square"></i>
+            </div>
+<!-- Linkedin
+            <div class="contact-info__list--item">
+            link here
+              <i class="fab fa-linkedin"></i>
+            </div>
+          -->
+
+            <div class="contact-info__list--item">
+              989-264-5297
+              <i class="fas fa-phone-square"></i>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="main__body">
+
+        <div class="main__body--section">
+          <div class="section__title">
+            Professional Experience
+          </div>
+          <div class="section__body">
+
+            <div class="job-list">
+
+              <div class="job">
+                <div class="job__company-name">
+                  Kay's Screen Printing and Embroidery :
+                </div>
+                <div class="job__title">
+                  <div class="job__title--name">
+                    Web Developer
+                  </div>
+                  <div class="job__title--date">
+                    December 2018 – Present
+                  </div>
+                </div>
+
+                <div class="job__responsibility-list">
+                  <div class="responsibility">
+                    <i class="fas fa-minus"></i>
+                    Launch main website using Deconetwork CMS featuring an online designer API
+                  </div>
+                  <div class="responsibility">
+                    <i class="fas fa-minus"></i>
+                    Develop responsive websites for clients using Deconetwork CMS
+                  </div>
+                  <div class="responsibility">
+                    <i class="fas fa-minus"></i>
+                  Create invoices and bill customers
+                  </div>
+                  <div class="responsibility">
+                    <i class="fas fa-minus"></i>
+                  Produce custom clothing
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="job">
+                <div class="job__company-name">
+                  Delta Collegiate :
+                </div>
+                <div class="job__title">
+                  <div class="job__title--name">
+                    Reporter/Web Developer
+                  </div>
+                  <div class="job__title--date">
+                    August 2019 – Present
+                  </div>
+                </div>
+                <div class="job__responsibility-list">
+                  <div class="responsibility">
+                    <i class="fas fa-minus"></i>
+                  Research and conducting interviews in the field
+                  </div>
+                  <div class="responsibility">
+                    <i class="fas fa-minus"></i>
+                    Writing articles and creating infographics
+                  </div>
+                  <div class="responsibility">
+                    <i class="fas fa-minus"></i>
+                    Building new website using Wordpress CMS
+                  </div>
+                  <div class="responsibility">
+                    <i class="fas fa-minus"></i>
+                    Shape website to our needs using HTML, CSS, JavaScript and PHP
+                  </div>
+                  <div class="responsibility">
+                    <i class="fas fa-minus"></i>
+                    Schedule content to be posted on new website
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="main__body--section">
+          <div class="section__title">
+            Deployed & Maintained Projects
+          </div>
+          <div class="section__body">
+
+            <div class="project-list">
+
+              <div class="project">
+                <div class="project__link">
+                  <a href= "https://ksetees.com/" target="_blank"> ksetees.com </a>
+                </div>
+                <div class="project__description">
+                  Website for Kay's Screen Printing and Embroidery where customers can design their own clothing and place orders
+                </div>
+
+              </div>
+              <div class="project">
+                <div class="project__link">
+                <a href= "https://abovethewake.ksetees.com/" target="_blank">  abovethewake.ksetees.com </a>
+                </div>
+                <div class="project__description">
+                  Webstore for non-profit company "Above the Wake"
+              </div>
+
+              <div class="project">
+                <div class="project__link">
+                <a href= "https://torchlake.ksetees.com/" target="_blank">  torchlake.ksetees.com </a>
+                </div>
+                <div class="project__description">
+                  A webstore we hope to launch after partnering with an organization to promote the conservation of Torch lake
+                </div>
+              </div>
+
+              <div class="project">
+                <div class="project__link">
+                <a href= "https://theclearlakebar.com/" target="_blank">  theclearlakebar.com </a>
+                </div>
+                <div class="project__description">
+                  Wordpress website for the Clear Lake Bar
+                </div>
+              </div>
+
+              <div class="project">
+                <div class="project__link">
+                <a href= "https://deltacollegiate.org/" target="_blank">  deltacollegiate.org </a>
+                </div>
+                <div class="project__description">
+                  Student run news organization at Delta College
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+        <div class="main__body--section">
+          <div class="section__title">
+            Education
+          </div>
+          <div class="section__body">
+
+            <div class="education-list">
+
+              <div class="education">
+                <div class="education__line">
+                  <div class="education__line--organization">
+                    Delta College
+                  </div>
+                  <div class="education__line--location">
+                    University Center, MI
+                  </div>
+                </div>
+
+                <div class="education__line">
+                  <div class="education__line--degree">
+                    Associate of Applied Science – Network Administration
+                  </div>
+                  <div class="education__line--date">
+                    Scheduled to finish Spring 2021
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+        <div class="main__body--section">
+          <div class="section__title">
+            Skills
+          </div>
+          <div class="section__body">
+
+            <div class="skills-title">
+              Programming Languages
+            </div>
+
+            <div class="skills-list">
+
+              <div class="skill">
+                HTML
+              </div>
+              <div class="skill">
+                CSS
+              </div>
+              <div class="skill">
+                JavaScript
+              </div>
+              <div class="skill">
+                PHP
+              </div>
+
+
+            </div>
+
+            <div class="skills-title">
+              Experience with
+            </div>
+
+            <div class="skills-list">
+
+              <div class="skill">
+                Deconetwork CMS
+              </div>
+              <div class="skill">
+                Wordpress CMS
+              </div>
+              <div class="skill">
+                Cisco routers and switches
+              </div>
+              <div class="skill">
+                PHPMyAdmin
+              </div>
+              <div class="skill">
+                MySql
+              </div>
+              <div class="skill">
+                Json
+              </div>
+              <div class="skill">
+                jQuery
+              </div>
+              <div class="skill">
+                Ajax
+              </div>
+
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <div class="main__footer">
+
+      </div>
+
+    </div>
+
+  </body>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+  <script type="text/javascript" src="Resume.js"></script>
+
+</html>
